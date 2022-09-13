@@ -3,15 +3,29 @@
 
 #include <iostream>
 using namespace std;
+struct piper;
+{
+	int lenght;
+	int diametr;
+	int inWork;
+};
+
+int stateMenu;
+void menu()
+{
+	setlocate(LC_ALL, "");
+	cout << "1. Добавить трубу /n 2.Добавить КС /n 3. Просмотр всех объектов /n  4. Редактировать трубу /n 5. Редактировать КС /n 6. Сохранить /n 7. Загрузить /n 0. Выход ";
+	cin >> stateMenu;
+}
 
 int main()
 {
-    int a;
-    std::cout << "Hello World!"  << endl;
-    cin >> a;
-    cout << "a= " << a;
-    return 0;
-   
+	pipe objPipe;
+	menu();
+	while (stateMenu != 0)
+	{
+		switch (stateMenu)
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
